@@ -1,0 +1,123 @@
+
+body{
+  margin: 0px;
+  background-color: #026478;
+  font-family: sans-serif;
+}
+.home {
+  width: 350px;
+    padding: 15px;
+   margin: auto;
+   margin-top: 30px;
+    text-align: center;
+}
+
+.home__heading {
+  color: #268395;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #1e6573;
+  border-radius: 8px;   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.task:hover {
+  transform: scale(1.02);
+  background-color: #268395;
+}
+
+.task__checkbox {
+  display: flex;
+  color: #268395;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.task__icon {
+  color: #c2eaad;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.task__icon:hover {
+  color: #97e66c;
+}
+
+.task__text {
+  margin: 0;
+  font-size: 1em;
+  color: #08505e;
+
+  font-weight: 500;
+}
+
+.task__text--completed {
+  text-decoration: line-through;
+}
+
+.task__delete-icon {
+  color: #ce6d52;
+  margin: 0 5px 0 4px;
+  cursor: pointer;
+}
+
+.no-records {
+  color: #268395;
+  font-size: 1em;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.create-task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.create-task__input {
+  width: 300px;
+  color: #50a4b6;
+  background-color: #357481;
+  padding: 10px;
+  border: 2px solid #275861;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.create-task__input:focus {
+  border-color: #357481;
+}
+
+.create-task__button {
+  padding: 10px 20px;
+  background-color: #357481;
+  color: #5caebe;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 2px solid #275861;
+
+  transition: background-color 0.3s ease;
+}
+
+.create-task__button:hover {
+  background-color: #147487;
+}
